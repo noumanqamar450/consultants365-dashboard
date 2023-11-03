@@ -1,0 +1,39 @@
+.chat {
+    max-width: 600px;
+    padding: 15px 20px;
+    background: #ddd;
+    border-radius: 20px 20px 20px 0px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.chat.chat-user {
+    text-align: end;
+    border-radius: 20px 20px 0px 20px;
+    background: #efefef;
+    margin-right: unset;
+    margin-left: 50px;
+}
+
+.chat span {
+    display:  flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.user-sticky-bar {
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 640px) {
+    .user-sticky-bar {
+        display:none;
+    }
+    .chat {
+        margin-right: 20px;
+    }
+    .chat.chat-user {
+        margin-left: 20px;
+    }
+}
